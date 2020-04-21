@@ -1,0 +1,47 @@
+Niveau 1
+1. le nom de tous les chevaux
+
+SELECT nom FROM cheval;
+
+2. le nom et prénom de tous les jockeys
+
+SELECT nom, prenom FROM jockey;
+
+3. Ajouter ce dernier à votre table cheval puis afficher les modifications
+
+INSERT INTO cheval (nom, sexe, poid) VALUES ('Digital Phoenix','M','532');
+SELECT * FROM cheval;
+
+Niveau 2
+1. nom de tous les chevaux du sexe Masculin
+
+SELECT nom FROM cheval WHERE Sexe = 'M';
+
+2. numéro du cheval du jockey « Laurent Midas »
+
+SELECT cheval_id FROM jockey WHERE nom = 'Midas' AND prenom = 'Laurent';
+
+3. distance cumulée de toutes les courses
+
+SELECT SUM(distance) FROM course;
+
+4. mettre à jour le numéro du cheval du jockey né le 5/04/1998
+
+UPDATE jockey SET cheval_id = (SELECT id FROM cheval WHERE nom = 'Digital Phoenix';) WHERE datenaissance = '5/04/1998';
+
+Niveau 3
+1. nom du cheval que sera monter par le jockey portant la casaque « bleu cassis ».
+
+SELECT nom FROM cheval WHERE id = (SELECT cheval_id FROM jockey J JOIN courseparticipant C ON J.id = C.jockey_id WHERE C.Casaque = 'bleu cassis');
+
+2. poids moyen des chevaux du prix « Z Fury »
+
+SELECT AVG(poid) FROM cheval WHERE id IN (SELECT cheval_id FROM jockey WHERE id IN (SELECT jockey_id FROM courseparticipant C JOIN course K ON C.course_id = K.id WHERE K.nomprix = 'Z Fury'));
+
+3. le retirer de la course
+
+DELETE FROM courseparticipant WHERE jockey_id = '1' AND course_id = (SELECT id FROM course WHERE nomprix = 'Final strike');
+
+4. liste des chevaux restants du plus léger au plus lourd
+
+SELECT nom FROM cheval WHERE id IN (SELECT cheval_id FROM jockey WHERE id IN (SELECT jockey_id FROM courseparticipant Where course_id = (SELECT id FROM course WHERE nomprix = 'Final strike'))) ORDER BY poid ASC;

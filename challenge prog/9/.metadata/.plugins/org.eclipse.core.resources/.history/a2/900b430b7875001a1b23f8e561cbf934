@@ -1,0 +1,12 @@
+package code;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Titre de l'ouvrage : Les bases de la programmation\n");
+		System.out.println("Auteur : Graven\n");
+		System.out.println("Edition Nevarg\n");
+	}
+
+}

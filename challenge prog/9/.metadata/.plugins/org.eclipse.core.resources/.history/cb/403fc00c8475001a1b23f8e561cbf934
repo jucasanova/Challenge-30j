@@ -1,0 +1,63 @@
+package code;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String titre = "Les bases de la programmation";
+		String auteur = "Graven";
+		String editeur = "Nevarg";
+		
+		List<String> chapitres = new ArrayList<>();
+		
+		chapitres.add("Chapitre 1. Qu’est-ce que le Java ?");
+		chapitres.add("Chapitre 2. Qu’est-ce qu’une variable");
+		chapitres.add("Chapitre 3. Les Conditions");
+		chapitres.add("Chapitre 4. Les tableaux");
+				
+		System.out.println("Titre de l'ouvrage : " + titre);
+		System.out.println("Nom de l'auteur : " + auteur);
+		System.out.println("Société éditrice : " + editeur);
+		
+		System.out.println("Sommaire :");
+		
+		chapitres.forEach(System.out::println);
+		
+		
+		List<String> chapitre1 = new ArrayList<>();
+		chapitre1.add("La java est un langage de programmation, Le java est un langage de programmation orientée objet");
+		chapitre1.add("Il permet de faire des applications, des sites web ou encore des bots discords");
+		chapitre1.add("Lien pour télécharger Java : http ://////");
+		chapitre1.add("Il faut aussi le JDK c’est un kit de développement pour faire des applications en Java. Télécharger le ici : http///….");
+		
+		List<String> chapitre2 = new ArrayList<>();
+		chapitre2.add("Une variable est un élément pour stocker temporairement une valeur qui peut changer, varier lors de l’exécution du programme.");
+		chapitre2.add("Il existe différents types de variable :");
+		chapitre2.add("Int pour les nombres");
+		chapitre2.add("Floats pour les nombres à virgule");
+		chapitre2.add("Boolean pour le VRAI ou FAUX");
+		chapitre2.add("String pour le text");
+		chapitre2.add("");
+		chapitre2.add("Pour faire une variable vous devez faire ça");
+		chapitre2.add("Type nomDeLaVariable = valeur ;");
+		chapitre2.add("Quelques exemples :");
+		chapitre2.add("String pseudo = “Graven”;");
+		chapitre2.add("Boolean gagner = false;");
+		chapitre2.add("int age = 21;");
+		chapitre2.add("float prix = 19.99;");
+		
+		Livre livreGraven = new Livre(titre);
+		
+		livreGraven.ajouterPage(chapitre1);
+		livreGraven.ajouterPage(chapitre2);
+		
+		System.out.println("Nombre de pages : " + livreGraven.getNombrePages());
+		
+		
+		
+	}
+
+}

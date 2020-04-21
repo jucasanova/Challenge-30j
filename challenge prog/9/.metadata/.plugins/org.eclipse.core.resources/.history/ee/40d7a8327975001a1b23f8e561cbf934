@@ -1,0 +1,13 @@
+package code;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String titre = "Les bases de la programmation";
+		System.out.println("Titre de l'ouvrage : "+titre);
+		System.out.println("Nom de l'auteur : Graven");
+		System.out.println("Société éditrice : Nevarg");
+	}
+
+}

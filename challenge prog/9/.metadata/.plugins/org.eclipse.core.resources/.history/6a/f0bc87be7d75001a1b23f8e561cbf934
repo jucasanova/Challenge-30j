@@ -1,0 +1,31 @@
+package code;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Livre {
+	
+	private List<Pages> pages;
+	private String nomLivre;
+	
+	public Livre(String nomLivre)	{
+		this.pages = new ArrayList<>();
+		this.nomLivre = nomLivre;
+	}
+	
+	public String getNomLivre() {
+		return nomLivre;
+	}
+	public void setNomLivre(String nomLivre) {
+		this.nomLivre = nomLivre;
+	}
+
+	public List<Pages> getPages() {
+		return pages;
+	}
+
+	public void setPages(List<Pages> pages) {
+		this.pages = pages;
+	}
+	
+}

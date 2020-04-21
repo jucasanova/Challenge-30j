@@ -1,0 +1,26 @@
+package code;
+
+public class Livre {
+	
+	private int nombrePages;
+	private String nomLivre;
+	
+	public Livre(String nomLivre)	{
+		this.nombrePages = 0;
+		this.nomLivre = nomLivre;
+	}
+	
+	public int getNombrePages() {
+		return nombrePages;
+	}
+	public void setNombrePages(int nombrePages) {
+		this.nombrePages = nombrePages;
+	}
+	public String getNomLivre() {
+		return nomLivre;
+	}
+	public void setNomLivre(String nomLivre) {
+		this.nomLivre = nomLivre;
+	}
+	
+}

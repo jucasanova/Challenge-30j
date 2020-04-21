@@ -1,0 +1,30 @@
+package MagasinDeJouet;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		List<String> jouets = new ArrayList<>();
+		
+		jouets.add("Scrubble Deluxe");
+		jouets.add("Lu Garu");
+		jouets.add("Zebre Figurine");
+		jouets.add("Osobot Evo");
+		jouets.add("Araignée peluche");
+		jouets.add("Ligo Start wars");
+		jouets.add("Bakogan Battle Pack");
+		
+		System.out.println(jouets);
+
+		
+		for(String jouet:jouets){
+			System.out.println("nom : " + jouet);
+		}
+		
+
+	}
+
+}

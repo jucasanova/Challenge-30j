@@ -1,0 +1,99 @@
+body, html {
+    background: #DBDBD9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0;
+    background: url("images/header-section.jpg") no-repeat;
+    background-size: cover;
+}
+
+.explorer {
+    margin: 0;
+    padding: 2%;
+}
+
+.explorer ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.line1, .line2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin: 1%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.ville {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 265px;
+    margin: 0;
+    padding: 0;
+}
+
+.ville h4 {
+    text-align: center;
+    padding: 2%;
+    font-size: large;
+    color: #DBDBD9;
+    background: #474747;
+}
+
+.prix {
+    margin-top: 150px;
+    width: 30%;
+    padding: 2% 2% 2% 10%;
+    color: #DBDBD9;
+    background: #a80000;
+}
+
+.barcelone {
+    background: url("images/barcelone.jpg") center no-repeat;
+    background-size: contain;
+}
+
+.dubai {
+    background: url("images/dubai.jpg") center no-repeat;
+    background-size: contain;
+}
+
+.philippines {
+    background: url("images/philippines.jpg") center no-repeat;
+    background-size: contain;
+}
+
+.tunis {
+    background: url("images/tunis.jpg") center no-repeat;
+    background-size: contain;
+}
+
+.paris {
+    background: url("images/paris.jpg") center no-repeat;
+    background-size: contain;
+}
+
+.londres {
+    background: url("images/londres.jpg") center no-repeat;
+    background-size: contain;
+}

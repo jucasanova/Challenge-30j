@@ -1,0 +1,127 @@
+body,html {
+    background-color: #f25a29;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transition: 0.3s all;
+}
+
+.intro{
+    background: url("images/header-section.jpg") center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+#horaire {
+    background: url("images/1.jpg") no-repeat center;
+}
+
+#mention {
+    background: url("images/2.jpg") no-repeat center;
+}
+
+#nbCock {
+    background: url("images/3.jpg") no-repeat center;
+}
+
+.lineCont{
+    width: 200px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.lineContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+}
+
+.descriptionC, .prixC {
+    opacity: 0;
+    background-color: #2e2e2e;
+    text-align:center;
+    position:relative;
+    bottom:150px;
+    left:0;
+    right:0;
+    padding: 5% 1%;
+    border: 2px ridge #565656;
+    transition: 0.5s all;
+}
+
+.logoC, .titreC {
+    opacity: 1;
+    transition: 0.5s all;
+    font-size: 1.7em;
+}
+
+.cocktail:hover .logoC, .cocktail:hover .titreC {
+    opacity: 0;
+}
+
+.cocktail:hover .descriptionC, .cocktail:hover .prixC {
+    opacity: 1;
+}
+
+.cocktail {
+    margin: auto 2%;
+}
+
+#happyHour {
+    background: url("images/cocktail-section.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 0;
+    display: block;
+    margin: auto;
+}
+
+.logo img{
+    display: block;
+    margin: 100px auto 20px auto;
+}
+
+.slogan {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.barre {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto auto -50px auto;
+}
+
+#head {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.lineCont {
+    display: block;
+    margin: auto;
+}
+
+.headContent {
+    width: 33%;
+    display: block;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 50px;
+    line-height: 50px;
+}

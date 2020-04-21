@@ -1,0 +1,33 @@
+package code;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String titre = "Les bases de la programmation";
+		String auteur = "Graven";
+		String editeur = "Nevarg";
+		
+		List<String> chapitres = new ArrayList<>();
+		chapitres.add("Chapitre 1. Qu’est-ce que le Java ?");
+		chapitres.add("Chapitre 2. Qu’est-ce qu’une variable");
+		chapitres.add("Chapitre 3. Les Conditions");
+		chapitres.add("Chapitre 4. Les tableaux");
+				
+		System.out.println("Titre de l'ouvrage : " + titre);
+		System.out.println("Nom de l'auteur : " + auteur);
+		System.out.println("Société éditrice : " + editeur);
+		
+		System.out.println("Sommaire :");
+		
+		for (String chapitre : chapitres) {
+			System.out.println(chapitre);
+		}
+		
+		
+	}
+
+}

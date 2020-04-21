@@ -1,0 +1,51 @@
+Niveau 1
+afficher toutes les planetes :
+
+SELECT nom FROM planete;
+
+afficher température de Mars:
+
+SELECT temperature FROM planete WHERE nom = 'Mars';
+
+ajouter nouvelle planete:
+
+INSERT INTO planete (nom,temperature,distancesol,diametre) VALUES ('Nebula',1500,123000000000,472000);
+
+Niveau 2
+nom et diametre de la planete la plus loin du Soleil:
+
+SELECT nom,diametre
+FROM planete
+ORDER BY distancesol DESC
+LIMIT 1;
+
+nom des 3 planètes les plus froide du système solaire:
+
+SELECT nom
+FROM planete
+ORDER BY temperature ASC
+LIMIT 3;
+
+température totale de toutes les planètes réunis:
+
+SELECT SUM(temperature)
+FROM planete;
+
+Niveau 3
+Afficher le nom de la mission qui mobilise le plus de personnes:
+
+SELECT nom
+FROM mission
+ORDER BY nbequipage ASC
+LIMIT 1;
+
+Afficher le nom et le diamètre de la planète cible sur la mission n°2:
+
+SELECT P.nom,P.diametre
+FROM planete P JOIN mission M ON P.id = M.planete_id
+WHERE M.id = 2;
+
+Afficher la moyenne du nombre de personnes envoyés sur chaque mission:
+
+SELECT AVG(nbequipage)
+FROM mission;

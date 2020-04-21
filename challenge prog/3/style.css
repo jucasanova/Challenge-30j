@@ -1,0 +1,53 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    color: white;
+}
+
+#Accueil {
+    width: 100%;
+    min-height: 100%;
+    vertical-align: center;
+}
+
+#Accueil p{
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+#Accueil img{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+#aPropos {
+    position: relative;
+    padding: 50px 150px;
+    width: 100%;
+    height: auto;
+    background: url("images/intro.jpg") no-repeat;
+}
+
+#Conquetes {
+    position: relative;
+    padding: 50px 150px;
+    width: 100%;
+    height: auto;
+}
+
+#Armes {
+    position: relative;
+    padding: 50px 150px;
+    width: 100%;
+    height: auto;
+    background: url("images/armurerie.jpg") no-repeat;
+}
+
+#content{
+    width: 100%;
+    display: block;
+}

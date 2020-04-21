@@ -1,0 +1,17 @@
+package MagasinDeJouet;
+
+public class Jouet {
+
+	String nom;
+	int prix;
+	String description;
+	int promo;
+	
+	Jouet(String nom, int prix, String description, int promo){
+		this.nom = nom;
+		this.prix = prix;
+		this.description = description;
+		this.promo = promo;
+	}
+	
+}
